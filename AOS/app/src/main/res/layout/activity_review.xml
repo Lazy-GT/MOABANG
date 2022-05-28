@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moabang_lightGray"
+    tools:context=".src.theme.ReviewActivity">
+
+    <include
+        android:id="@+id/toolbar_review"
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/sv_review_root"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_review_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_review">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/cl_review_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/rounded_rectangle_bg"
+                app:layout_constraintBottom_toTopOf="@+id/cl_review_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/tv_review_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="플레이하신 날짜를 선택해주세요"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/ll_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_review_date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_review_date">
+
+                    <TextView
+                        android:id="@+id/tv_review_date_selected"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="2022-05-01"
+                        android:textColor="@color/moabang_gray"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:src="@drawable/icon_next" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_review_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="플레이 인원을 입력해주세요"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_review_date" />
+
+                <EditText
+                    android:id="@+id/et_review_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/moabang_pink"
+                    android:ems="3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:textColor="@color/moabang_pink"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_review_playerr"
+                    app:layout_constraintTop_toTopOf="@+id/tv_review_player" />
+
+                <TextView
+                    android:id="@+id/tv_review_playerr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:text="명"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_review_player"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/et_review_player" />
+
+                <TextView
+                    android:id="@+id/tv_review_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="탈출에 성공하셨나요?"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_review_player" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_review_success"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_review_success"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/tv_review_success"
+                    app:singleSelection="true"
+                    tools:ignore="MissingConstraints"></com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:id="@+id/tv_review_timeLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="몇 분동안 플레이하셨나요?"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_review_success" />
+
+                <EditText
+                    android:id="@+id/et_review_timeLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/moabang_pink"
+                    android:ems="3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="@color/moabang_pink"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_review_timeLeft"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_review_time"
+                    app:layout_constraintTop_toTopOf="@+id/tv_review_timeLeft" />
+
+                <TextView
+                    android:id="@+id/tv_review_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:text="분"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_review_timeLeft"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/et_review_timeLeft" />
+
+                <TextView
+                    android:id="@+id/tv_review_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="몇 개의 힌트를 사용하셨나요?"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_review_timeLeft" />
+
+                <EditText
+                    android:id="@+id/et_review_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/moabang_pink"
+                    android:ems="3"
+                    android:inputType="numberDecimal"
+                    android:maxLength="2"
+                    android:singleLine="true"
+                    android:textColor="@color/moabang_pink"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_review_hint"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_review_hintt"
+                    app:layout_constraintTop_toTopOf="@+id/tv_review_hint" />
+
+                <TextView
+                    android:id="@+id/tv_review_hintt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:text="개"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_review_hint"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/et_review_hint" />
+
+                <TextView
+                    android:id="@+id/tv_review_diff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="24dp"
+                    android:text="이 테마의 난이도는 어떠셨나요?"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_review_hint" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_review_diff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_review_diff"
+                    app:singleSelection="true"
+                    tools:ignore="MissingConstraints"></com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:id="@+id/tv_review_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:text="이 테마의 활동성은 어떠셨나요?"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cg_review_diff" />
+
+                <com.google.android.material.chip.ChipGroup
+                    android:id="@+id/cg_review_active"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_review_active"
+                    app:singleSelection="true"
+                    tools:ignore="MissingConstraints"></com.google.android.material.chip.ChipGroup>
+
+                <TextView
+                    android:id="@+id/tv_review_rplayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="24dp"
+                    android:text="몇 명의 인원이 플레이하길 추천하시나요?"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cg_review_active" />
+
+                <EditText
+                    android:id="@+id/et_review_rplayer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="@color/moabang_pink"
+                    android:ems="2"
+                    android:inputType="numberDecimal"
+                    android:maxLength="1"
+                    android:singleLine="true"
+                    android:textColor="@color/moabang_pink"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tv_review_rplayer"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_review_rplayerr"
+                    app:layout_constraintTop_toTopOf="@+id/tv_review_rplayer" />
+
+                <TextView
+                    android:id="@+id/tv_review_rplayerr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="32dp"
+                    android:text="명"
+                    android:textColor="@color/moabang_gray"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/et_review_rplayer"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/et_review_rplayer" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_review_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/rounded_rectangle_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_review_1">
+
+        <RatingBar
+            android:id="@+id/ratingBar_review"
+            style="@style/Widget.AppCompat.RatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:progressTint="@color/moabang_pink"
+            android:stepSize="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_review_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="별점을 입력해주세요"
+            android:textColor="@color/moabang_pink"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ratingBar_review" />
+
+        <EditText
+            android:id="@+id/et_review_content"
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_margin="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/content_border"
+            android:fontFamily="@font/font"
+            android:gravity="start"
+            android:hint="내용을 입력하세요."
+            android:padding="16dp"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_review_rating" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_review_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded"
+        android:padding="4dp"
+        android:text="취소"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_review_ok"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_review_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_rounded"
+        android:padding="4dp"
+        android:text="등록"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_review_cancel" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cafe_list_island">
+        <item>전체</item>
+        <item>서울</item>
+        <item>경기/인천</item>
+        <item>충청</item>
+        <item>강원</item>
+        <item>경상</item>
+        <item>전라</item>
+        <item>제주</item>
+    </string-array>
+</resources>

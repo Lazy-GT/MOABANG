@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moabang_lightGray"
+    tools:context=".src.main.community.CommunityFragment">
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/cg_comm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_announcement"
+            style="@style/tab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text="공지"
+            android:textSize="16dp"
+            app:chipBackgroundColor="@color/moabang_lightGray"
+            app:chipIcon="@drawable/ic_announcement" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_free_board"
+            style="@style/tab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text="자유"
+            android:textSize="16dp"
+            app:chipBackgroundColor="@color/moabang_lightGray"
+            app:chipIcon="@drawable/ic_free_board" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_party"
+            style="@style/tab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text="구인"
+            android:textSize="16dp"
+            app:chipBackgroundColor="@color/moabang_lightGray"
+            app:chipIcon="@drawable/ic_party" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_all"
+            style="@style/tab_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font"
+            android:text="전체"
+            android:textSize="16dp"
+            app:chipBackgroundColor="@color/moabang_lightGray"
+            app:chipIcon="@drawable/ic_all" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_write"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_edit_24"
+        app:backgroundTint="@color/moabang_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_commuF_3_announcement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:elevation="2dp"
+        android:background="@color/white"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cg_comm" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_commuF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_commuF_3_announcement" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

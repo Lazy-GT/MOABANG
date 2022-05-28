@@ -1,0 +1,76 @@
+.total{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+
+
+.filter{ 
+    width: 100%;
+    height: 200px;
+    background-color: #FFC7C7;
+    border-radius: 15px;
+}
+
+.cafeList{
+    width: 100%;
+}
+
+.cafedetailList{
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.cafe-detail-container{
+    border-radius: 15px;
+    margin-top: 2%;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 25%;
+    height: 430px;
+    background-color: #FFFFFF;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.cafeImg{
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 90%;
+    height: 55%;
+}
+.cafeInfo{
+    position: relative;
+    height: 25%;
+}
+#cafeName{
+    font-size: 25px;
+    font-family:'Lucida Grande';
+    margin-left: 20px;
+    left: 0;
+}
+#cafeAdd{
+    position: absolute;
+    left: 10px;
+    bottom: -50px;
+    width: 50%;
+}
+#cafeNumber{
+    position: absolute;
+    right: 10px;
+    bottom: -50px;
+}
+.button4 {
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    border-radius: 15px;
+    margin-right: 10px;
+  }
+  
+  .button4:hover {background-color: #e7e7e7;}
+
+
+
+
+
+

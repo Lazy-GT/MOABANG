@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cafe_list_si_seoul">
+        <item>전체</item>
+        <item>강남</item>
+        <item>건대</item>
+        <item>구로</item>
+        <item>노량진</item>
+        <item>노원</item>
+        <item>대학로</item>
+        <item>명동</item>
+        <item>목동</item>
+        <item>서울대 입구</item>
+        <item>성수</item>
+        <item>성신여대앞</item>
+        <item>수유</item>
+        <item>신림</item>
+        <item>신촌</item>
+        <item>연신내</item>
+        <item>영등포</item>
+        <item>왕십리</item>
+        <item>용산</item>
+        <item>이수</item>
+        <item>잠실</item>
+        <item>종로</item>
+        <item>천호</item>
+        <item>홍대</item>
+        <item>회기</item>
+    </string-array>
+</resources>

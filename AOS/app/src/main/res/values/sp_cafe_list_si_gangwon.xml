@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cafe_list_si_gangwon">
+        <item>전체</item>
+        <item>강릉</item>
+        <item>원주</item>
+        <item>춘천</item>
+    </string-array>
+</resources>

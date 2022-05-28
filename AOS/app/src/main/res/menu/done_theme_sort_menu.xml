@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sort_by_rate"
+        android:title="평점순"/>
+    <item
+        android:id="@+id/sort_by_playDate"
+        android:title="플레이일순"/>
+    <item
+        android:id="@+id/sort_by_tname"
+        android:title="테마 이름순"/>
+    <item
+        android:id="@+id/sort_by_cname"
+        android:title="카페 이름순"/>
+</menu>

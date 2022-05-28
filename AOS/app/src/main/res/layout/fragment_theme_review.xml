@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".src.theme.ThemeReviewFragment">
+
+    <TextView
+        android:id="@+id/tv_themeRVF_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:text="리뷰 통계"
+        android:textColor="@color/moabang_gray"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+        android:id="@+id/ratingBar_themeRVF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:max="5"
+        android:numStars="5"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_themeRVF_title"
+        app:layout_constraintStart_toEndOf="@+id/tv_themeRVF_title"
+        app:srb_borderColor="@color/moabang_pink"
+        app:srb_fillColor="@color/moabang_pink"
+        app:srb_isIndicator="true"
+        app:srb_numberOfStars="5"
+        app:srb_rating="0"
+        app:srb_starSize="25dp"
+        app:srb_stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/tv_themeRVF_rating"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="4dp"
+        android:text="리뷰 없음"
+        android:textAlignment="viewStart"
+        android:textColor="@color/moabang_gray"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingBar_themeRVF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ratingBar_themeRVF"
+        app:layout_constraintTop_toTopOf="@+id/ratingBar_themeRVF" />
+
+    <LinearLayout
+        android:id="@+id/ll_themeRVF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_themeRVF_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/themeRVF_diff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="체감 난이도"
+                android:textColor="@color/moabang_pink"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_themeRVF_diff"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="16dp"
+                android:textColor="@color/moabang_gray" />
+
+            <TextView
+                android:id="@+id/themeRVF_success"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="탈출 성공률"
+                android:textColor="@color/moabang_pink"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_themeRVF_success"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="16dp"
+                android:textColor="@color/moabang_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/themeRVF_active"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="체감 활동성"
+                android:textColor="@color/moabang_pink"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_themeRVF_active"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="16dp"
+                android:textColor="@color/moabang_gray" />
+
+            <TextView
+                android:id="@+id/themeRVF_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="평균 소요시간"
+                android:textColor="@color/moabang_pink"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_themeRVF_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="16dp"
+                android:textColor="@color/moabang_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/themeRVF_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="추천 인원"
+                android:textColor="@color/moabang_pink"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_themeRVF_player"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="16dp"
+                android:textColor="@color/moabang_gray" />
+
+            <TextView
+                android:id="@+id/themeRVF_hint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="평균 힌트수"
+                android:textColor="@color/moabang_pink"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_themeRVF_hint"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="-"
+                android:textSize="16dp"
+                android:textColor="@color/moabang_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_themeRVF_sort"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/icon_sort_mini"
+        android:drawableTint="@color/moabang_pink"
+        android:paddingStart="10dp"
+        android:text="정렬"
+        android:textColor="@color/moabang_gray"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btn_themeRVF_review"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_themeRVF" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_themeRVF_review"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/ic_review_resize"
+        android:text="리뷰 작성"
+        android:textColor="@color/moabang_gray"
+        android:drawableTint="@color/moabang_pink"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_themeRVF_sort"
+        app:layout_constraintTop_toTopOf="@+id/btn_themeRVF_sort" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_themeRVF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:paddingTop="8dp"
+        android:background="@drawable/rounded_rectangle_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_themeRVF_review" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

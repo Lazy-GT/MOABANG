@@ -1,0 +1,62 @@
+.Comment-Container{
+    margin-top: 50px;
+}
+
+
+.Comment{
+    position: relative;
+    width: 80%;
+    margin-left: 7%;
+    height: 80px;
+}
+#CommentImg1{
+    position: absolute;
+    left: 10%;
+    width: 40px;
+    height: 40px; 
+}
+#CommentImg2{
+    position: absolute;
+    left: 10%;
+    width: 40px;
+    height: 40px;
+    border-radius: 70%;
+    overflow: hidden; 
+}
+
+#CommentUserName{
+    position: absolute;
+    left: 16%;
+}
+#CommentDate{
+    position: absolute;
+    left: 28%;
+}
+#CommentContent{
+    position: absolute;
+    left: 16%;
+    top: 30px;
+}
+#hrSize{
+    width: 80%;
+    margin-left: 10%;
+    position: absolute;
+    bottom: 0;
+    border:1px solid rgb(207, 207, 207);
+}
+#CommentDeleteBtn{
+    position: absolute;
+    right: 16%;
+    background-color: #FFFFFF;
+    color: grey;
+    padding: 5px 7px;
+    border: none;
+}
+#CommentReport{
+    position: absolute;
+    right: 10%;
+    background-color: #FFFFFF;
+    color: grey;
+    padding: 5px 7px;
+    border: none;
+}

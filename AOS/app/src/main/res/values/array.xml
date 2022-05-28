@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="genre_list">
+        <item>19금</item>
+        <item>SF/판타지</item>
+        <item>감성/드라마</item>
+        <item>공포</item>
+        <item>로맨스</item>
+        <item>모험/액션</item>
+        <item>범죄</item>
+        <item>스릴러</item>
+        <item>추리</item>
+        <item>코미디</item>
+    </string-array>
+
+    <string-array name="type_list">
+        <item>자물쇠</item>
+        <item>장치</item>
+        <item>복합</item>
+    </string-array>
+
+    <string-array name="player_list">
+        <item>1인</item>
+        <item>2인</item>
+        <item>3인</item>
+        <item>4인</item>
+        <item>5인 이상</item>
+    </string-array>
+
+    <string-array name="diff_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="active_list">
+        <item>적음</item>
+        <item>보통</item>
+        <item>많음</item>
+    </string-array>
+</resources>

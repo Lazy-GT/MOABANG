@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moabang_lightGray"
+    android:backgroundTint="@color/moabang_lightGray"
+    tools:context=".src.main.MyPageFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_mypageF_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_rectangle"
+        android:padding="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/ll_mypageF_menu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_mypageF"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_profile"
+            app:civ_border_color="@color/moabang_lightPink"
+            app:civ_border_overlay="true"
+            app:civ_border_width="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="USER NAME"
+            android:textColor="@color/moabang_gray"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/tv_mypageF_userEmail"
+            app:layout_constraintStart_toEndOf="@+id/civ_mypageF"
+            app:layout_constraintStart_toStartOf="@+id/tv_mypageF_userEmail"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_userEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="useremail@email.com"
+            android:textColor="@color/moabang_pink"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/civ_mypageF"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mypageF_userName" />
+
+        <TextView
+            android:id="@+id/mypageF_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="5dp"
+            android:text="탈출 성공률"
+            android:textColor="@color/moabang_gray"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_mypageF_success"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@+id/civ_mypageF"
+            app:layout_constraintTop_toBottomOf="@+id/tv_mypageF_userEmail" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_success"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="66.6"
+            android:textColor="@color/moabang_pink"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/mypageF_success"
+            app:layout_constraintEnd_toStartOf="@+id/mypageF_successrate"
+            app:layout_constraintStart_toEndOf="@+id/mypageF_success" />
+
+        <TextView
+            android:id="@+id/mypageF_successrate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="%"
+            android:textColor="@color/moabang_gray"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_mypageF_success"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_mypageF_success" />
+
+        <TextView
+            android:id="@+id/mypageF_try"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="도전한 테마"
+            android:textColor="@color/moabang_gray"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_mypageF_try"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/mypageF_done"
+            app:layout_constraintTop_toBottomOf="@+id/mypageF_success" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_try"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="6"
+            android:textColor="@color/moabang_pink"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/mypageF_try"
+            app:layout_constraintEnd_toStartOf="@+id/mypageF_try2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/mypageF_try" />
+
+        <TextView
+            android:id="@+id/mypageF_try2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개"
+            android:textColor="@color/moabang_gray"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_mypageF_try"
+            app:layout_constraintEnd_toEndOf="@+id/mypageF_done2"
+            app:layout_constraintStart_toEndOf="@+id/tv_mypageF_try" />
+
+        <TextView
+            android:id="@+id/mypageF_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="성공한 테마"
+            android:textColor="@color/moabang_gray"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_mypageF_done"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@+id/mypageF_success"
+            app:layout_constraintTop_toBottomOf="@+id/mypageF_try" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="6"
+            android:textColor="@color/moabang_pink"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/mypageF_done"
+            app:layout_constraintEnd_toStartOf="@+id/mypageF_done2"
+            app:layout_constraintStart_toEndOf="@+id/mypageF_done" />
+
+        <TextView
+            android:id="@+id/mypageF_done2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="개"
+            android:textColor="@color/moabang_gray"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_mypageF_done"
+            app:layout_constraintEnd_toEndOf="@+id/mypageF_successrate"
+            app:layout_constraintStart_toEndOf="@+id/tv_mypageF_done" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_mypageF_menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_rectangle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:padding="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cl_mypageF_profile">
+
+
+        <TextView
+            android:id="@+id/tv_mypageF_menu2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="찜한 테마"
+            android:textColor="@color/moabang_gray"
+            android:gravity="center_vertical"
+            android:textSize="18dp"  />
+
+        <TextView
+            android:id="@+id/tv_mypageF_menu3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="테마 비교"
+            android:textColor="@color/moabang_gray"
+            android:gravity="center_vertical"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_menu4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="이용한 테마"
+            android:textColor="@color/moabang_gray"
+            android:gravity="center_vertical"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_menu5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="나의 방탈출 통계"
+            android:textColor="@color/moabang_gray"
+            android:gravity="center_vertical"
+            android:textSize="18dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_menu6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="작성글 관리"
+            android:textColor="@color/moabang_gray"
+            android:gravity="center_vertical"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/tv_mypageF_blank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:text=""
+            android:textColor="@color/moabang_gray"
+            android:textSize="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_mypageF_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="로그아웃"
+            android:textColor="@color/moabang_gray"
+            android:textSize="12dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_mypageF_signout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="회원탈퇴"
+        android:textColor="@color/moabang_gray"
+        android:textSize="12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_mypageF_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

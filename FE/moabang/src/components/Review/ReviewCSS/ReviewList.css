@@ -1,0 +1,184 @@
+.review-container{
+    margin-top: 30px;
+}
+.ReviewHead{
+    margin-left: 80px;
+    text-align: left;
+    height: auto;
+    position: relative;
+    z-index: 10;
+}
+#emptyReviewContent{
+    font-size: 50px;
+    margin-top: 50px;
+    color: #c09ee9;
+}
+
+.ReviewWriteBtn{
+    width: 100%;
+    height: 50px;
+
+}
+
+#reviewListImg{
+    height: 50px;
+    border-radius: 10px;
+    float: left;
+    position: relative;
+}
+#playDate{
+    font-family: "Oeisi";
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+#ReviewNemNum{
+    font-family: "Oeisi";
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+#ReviewSuccAndFail{
+    font-family: "Oeisi";
+    font-weight: 600;
+    font-size: 25px;
+    margin-left: 10px;
+}
+
+#ReviewUpdate{
+    margin-left: 10px;
+    float: right;
+}
+#ReviewReportBtn{
+    position: absolute;
+    right: 240px;
+    padding: 5px 5px;
+    color: #c09ee9;
+    background-color: #faecec;
+    border: none;
+}
+#ReviewDelete{
+    position: absolute;
+    right: 160px;
+    padding: 5px 5px;
+    color: #c09ee9;
+    background-color: #faecec;
+    border: none;
+    
+}
+
+#ReviewListText{
+    font-family: "Jalnsn";
+    font-size: 18px;
+    color: #a750dd;
+}
+/*
+---------------------------------------
+리뷰 리스트 CSS
+*/
+.ReviewDetail{
+    border-radius: 15px;
+    margin-top: 8px;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 80%;
+    height: 150px;
+    background-color: #FFFFFF;
+    position: relative;
+    z-index: 0;
+}
+.ReviewDetailReport{
+    border-radius: 15px;
+    margin-top: 8px;
+    margin-left: 4%;
+    margin-right: 4%;
+    width: 80%;
+    height: 150px;
+    background-color: #FFFFFF;
+    color: #c09ee9;
+    font-size: 30px;
+}
+
+#ReviewListStarImg{
+    width: 30px;
+    float: left;
+}
+
+#ReviewListStar{
+    font-family: "good";
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    font-weight: 1000;
+    font-size: 20px;
+    margin-left: 20px;
+
+}
+
+#ReviewListDiff{
+    font-family: "Oeisi";
+    font-size: 30px;
+    position: absolute;
+    top: 85px;
+    left: 20px;
+    margin-left: 20px;
+
+}
+#ReviewListTime{
+    font-family: "Oeisi";
+    font-size: 30px;
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    margin-left: 20px;
+    
+    
+}
+#ReviewListActive{
+    font-family: "Oeisi";
+    font-size: 30px;
+    position: absolute;
+    top: 25px;
+    left: 200px;
+    margin-left: 20px;
+    
+}
+#ReviewListHint{
+    font-family: "Oeisi";
+    font-size: 30px;
+    position: absolute;
+    top: 85px;
+    left: 200px;
+    margin-left: 20px;
+    
+}
+
+#ReviewListRecNum{
+    font-family: "Oeisi";
+    font-size: 30px;
+    position: absolute;
+    top: 55px;
+    left: 200px;
+    margin-left: 20px;
+    
+    
+    
+}
+#ReviewListContent{
+    width: 350px;
+    text-align: left;
+    height: auto;
+    font-family: "Oeisi";
+    font-size: 28px;
+    position: absolute;
+    top: 25px;
+    left: 400px;
+    margin-left: 20px;
+    
+}
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+a{
+    text-decoration: none;
+}
+
+.logout:hover{
+    text-decoration: underline
+}
+.d-inline-block{
+    height: 5vh;
+    width: 12vh;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+

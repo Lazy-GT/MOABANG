@@ -1,0 +1,169 @@
+.BoardDetailTotal{
+    background-color: #FFFFFF;
+    height: 1200px;   
+    width: 100%;
+}
+#BoardDetailMainText{
+    font-size:50px;
+    text-align: left;
+    margin-left: 10%;
+
+}
+#Detailname{
+    width: 50px;
+    margin-left: 10px;
+    font-size: 17px;
+    
+}
+#cog{
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    font-size: 5px;
+    margin-bottom: 2px;
+}
+#cogDate{
+    margin-left: 10px;
+    
+}
+#DatailDate{
+    position: relative;
+    margin-left: 30px;
+    color: gray;
+}
+#cog2{
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    font-size: 5px;
+    margin-bottom: 2px;
+}
+#DetailH{
+    position: relative;
+    margin-left: 20px;
+    color: gray;
+}
+
+#BoardRepotyBtn{
+    margin-left: 50%;
+    background-color: #FFFFFF;
+    color: grey;
+    padding: 5px 7px;
+    border: none;
+}
+
+#hr1{
+    width: 80%;
+    margin-left: 10%;
+    color: rgb(122, 122, 122);
+}
+.BoardDetailTitleContainer{
+    text-align: left;
+}
+#BoardDetailTitle{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 800;
+    margin-left: 15%;
+}
+
+#BoardDetailDate{
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+#hr2{
+    color: rgb(122, 122, 122);
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15px;
+}
+#hr3{
+    color: rgb(122, 122, 122);
+    margin-top: 50px;
+    width: 70%;
+    margin-left: 15%;
+}
+
+#BoardDetailImg{
+    width: 50px;
+    height: 50px; 
+    border-radius: 70%;
+    overflow: hidden;
+}
+.BoardDetailContent{
+    text-align: left;
+    white-space: pre-wrap;
+    width: 68%;
+    margin-top: 15px;
+    margin-left: 16%;
+    
+}
+
+.BoardDetailWriteBtn{
+    background-color: #FFFFFF;
+    padding: 5px 7px;
+    border: 1px solid rgb(122, 122, 122);
+    margin-left: 60%;
+    border-radius: 3px;
+}
+.BoardDetailCancelBtn{
+    background-color: #FFFFFF;
+    padding: 5px 7px;
+    border: 1px solid rgb(122, 122, 122);
+    margin-left: 10px;
+    border-radius: 3px;
+}
+.emtpy{
+    margin-left: 65%;
+}
+.goList{
+    background-color: #FFFFFF;
+    padding: 5px 7px;
+    border: 1px solid rgb(122, 122, 122);
+    margin-left: 10px;
+    border-radius: 3px;
+    margin-top: 15px;
+
+}
+
+.tailMain{
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 15%;
+    font-size: 18px;
+    font-weight: 600;
+}
+#comCnt{
+    margin-left: 10px;
+    color: blue;
+    
+}
+.tailForm{
+    border:1px solid rgb(207, 207, 207);
+    margin-top: 10px;
+    padding: 10px;
+    width: 60%;
+    height: 150px;
+    margin-left: 15%;
+    position: relative;
+}
+#tailContent{
+    width: 90%;
+    height: 80px;
+    border:1px solid rgb(207, 207, 207);
+}
+#tailWriteBtn{
+    position: absolute;
+    right: 6%;
+    bottom: 10px;
+    background-color: #FFFFFF;
+    color: blue;
+    border: 1px solid blue;
+    padding: 5px 7px;
+}
+#tailCnt{
+    position: absolute;
+    right: 14%;
+    bottom: 13px;
+}

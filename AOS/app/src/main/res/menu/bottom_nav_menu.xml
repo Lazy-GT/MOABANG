@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_cafe"
+        android:enabled="true"
+        android:title="카페"
+        android:icon="@drawable/icon_cafe"/>
+
+    <item
+        android:id="@+id/nav_theme"
+        android:enabled="true"
+        android:title="테마"
+        android:icon="@drawable/icon_theme"/>
+
+    <item
+        android:id="@+id/nav_home"
+        android:enabled="true"
+        android:title="홈"
+        android:icon="@drawable/icon_home"/>
+
+    <item
+        android:id="@+id/nav_community"
+        android:enabled="true"
+        android:title="커뮤니티"
+        android:icon="@drawable/icon_community"/>
+
+    <item
+        android:id="@+id/nav_mypage"
+        android:enabled="true"
+        android:title="마이페이지"
+        android:icon="@drawable/icon_mypage"/>
+</menu>

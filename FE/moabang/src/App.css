@@ -1,0 +1,95 @@
+
+
+@font-face {
+    font-family: "GothicA1";
+    font-weight:200;
+    src: url("./fonts/GothicA1-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "DDadandan";
+    font-weight:200;
+    src: url("./fonts/나눔손글씨\ 따악단단.ttf");
+}
+@font-face {
+    font-family: "Oeisi";
+    font-weight:200;
+    src: url("./fonts/나눔손글씨\ 맛있는체.ttf");
+}
+@font-face {
+    font-family: "Son";
+    font-weight:200;
+    src: url("./fonts/나눔손글씨\ 미니\ 손글씨.ttf");
+}
+@font-face {
+    font-family: "Baba";
+    font-weight:200;
+    src: url("./fonts/나눔손글씨\ 바른히피.ttf");
+}
+@font-face {
+    font-family: "Behen";
+    font-weight:200;
+    src: url("./fonts/나눔손글씨\ 배은혜체.ttf");
+}
+@font-face {
+    font-family: "Bum";
+    font-weight:200;
+    src: url("./fonts/나눔손글씨\ 범솜체.ttf");
+}
+
+@font-face {
+    font-family: "Good";
+    font-weight:200;
+    src: url("./fonts/나눔손글씨\ 성실체.ttf");
+}
+@font-face {
+    font-family: "Jalnan";
+    font-weight:200;
+    src: url("./fonts/Jalnan.ttf");
+}
+
+@font-face {
+    font-family: 'BMJUA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DungGeunMo';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.top-button{
+    position: fixed;
+    bottom: 90px;
+    right: 10vh;
+    z-index: 1000;
+}
+
+.App{
+    background-color: #F6F6F6;
+}

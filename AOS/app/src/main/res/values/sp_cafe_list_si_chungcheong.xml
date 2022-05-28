@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cafe_list_si_chungcheong">
+        <item>전체</item>
+        <item>당진</item>
+        <item>대전</item>
+        <item>천안</item>
+        <item>청주</item>
+    </string-array>
+</resources>

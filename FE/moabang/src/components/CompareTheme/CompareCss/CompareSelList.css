@@ -1,0 +1,41 @@
+.selItem{
+    width: 290px;
+    height: 200px;
+    margin: 7px;
+    background-color: #FFC7C7;
+    position: relative;
+    border-radius: 10px;
+}
+.compareChart{
+    width: 40%;
+    float: left;
+}
+.CompareMainThemeList{
+    width: 45%;
+    float: right;
+}
+
+#selThemeImg{
+    position: absolute;
+    border-radius: 5px;
+    left: 7px;
+    top: 7px;
+    width: 100px;
+    height: 183px;
+}
+#selThemeName{
+    position: absolute;
+    left: 120px;
+    top: 7px;
+}
+
+#selDelBtn{
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+    position: absolute;
+    border-radius: 5px;
+    right: 5px;
+    bottom: 5px;
+}

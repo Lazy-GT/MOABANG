@@ -1,0 +1,35 @@
+.board-container{
+    height: 900px;
+}
+
+.boardName{
+    text-align: left;
+    margin-left: 10%;
+    font-size: 80px;
+}
+.btnLocaion{
+    text-align: left;
+    margin-left: 12%;
+    position: relative;
+    height: 50px;
+}
+#boardSelect{
+    padding: 5px 5px;
+}
+
+/*버튼 */
+.mainWriteBtn{
+    background-color: #f3f3f3be;
+    text-align: left;
+    position: absolute;
+    right: 13%;
+    border: 2px solid gray;
+    padding: 5px 5px;
+}
+
+#pencilImg{
+    width: 25px;
+}
+#pencilText{
+    margin-left: 5px;
+}

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cafe_list_si_gyeonggi_incheon">
+        <item>전체</item>
+        <item>구리</item>
+        <item>군포</item>
+        <item>김포</item>
+        <item>동두천</item>
+        <item>부천</item>
+        <item>성남</item>
+        <item>수원</item>
+        <item>안산</item>
+        <item>안양</item>
+        <item>용인</item>
+        <item>의정부</item>
+        <item>이천</item>
+        <item>인천</item>
+        <item>일산</item>
+        <item>평택</item>
+        <item>화성</item>
+    </string-array>
+</resources>

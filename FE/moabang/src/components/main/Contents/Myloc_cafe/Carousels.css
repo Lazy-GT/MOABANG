@@ -1,0 +1,63 @@
+.carousels-container{
+  border: 0.1vh solid #8785A2;
+  margin:3vh 16vh 0vh 20vh;
+  padding: 2vh 4vh 2vh 4vh;
+  border-radius: 2vh;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+  background-color: #FFFFFF;
+}
+.slick-track {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+.slick-slide {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-family: 'BMJUA';
+    margin-bottom: 15px;
+    
+  }
+  .slick-slide:not(.slick-current) {
+    filter: brightness(0.5);
+    
+  }
+  
+  .slick-slide.slick-current {
+    transform: scale(1.25);
+    position: relative;
+    z-index: 1;
+  }
+
+  .my-loc{
+    display: flex;
+  }
+  
+  .my-loc p{
+      text-align: left;
+      margin: 1vh 0 0vh 2vh;
+      font-size: 35px;
+      font-family: 'ONE-Mobile-POP';
+  }
+  .my-loc .run{
+    width: 7vh;
+  }
+  .card-text{
+    overflow: hidden;
+      text-overflow: ellipsis; 
+      white-space: nowrap; 
+  }
+
+
+  @keyframes typing{
+    0% {
+      width: 0%;
+    }
+    50% {
+      width: 100%;
+    }
+    100% {
+      width: 0%;
+    }
+  }

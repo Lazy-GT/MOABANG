@@ -1,0 +1,30 @@
+
+.fw-bold{
+    display: grid;
+    grid-template-columns: 0.3fr 2fr 0.3fr;
+    /* border: 0.1vh solid #8785A2; */
+    
+}
+
+.header {
+    /* border: 0.1vh solid #8785A2; */
+    text-align: left;
+    padding-left: 2vh;
+    color: brown;
+    margin-right: 2vh;
+    font-family: DungGeunMo;
+}
+.title {
+    /* border: 0.1vh solid #8785A2; */
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    font-family: Jalnan;
+}
+.new_badge{
+    width: 45px;
+    height: 25px;
+    padding: 5px;
+    margin: 1vh 0vh 0vh 2vh;
+}

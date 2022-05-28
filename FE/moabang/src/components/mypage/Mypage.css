@@ -1,0 +1,45 @@
+
+.profile-card-body{
+    border-radius: 2vh;
+    margin: 3vh 0 3vh 5vh;
+    border: 0.1vh solid #8785A2;
+}
+.profile-card-img
+{
+    vertical-align: middle;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 70%;
+    margin-bottom: 3vh;
+    max-width: 30vh;
+    max-height: 30vh;
+}
+.flex-column{
+    background-color: rgb(255, 255, 255);
+    border-radius: 2vh;
+    margin: 3vh 0 3vh 5vh;
+    border: 0.1vh solid #8785A2;
+    padding: 1vh;
+}
+.profile-tab-item-1-text,
+.profile-tab-item-2-text,
+.profile-tab-item-3-text,
+.profile-tab-item-4-text
+{
+    color: #8785A2;
+    
+}
+
+.content-card,
+.flex-column,
+.profile-card-body{
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,0.2), 0 6px 10px 0 rgba(0,0,0,0.19);
+    background-color: #FFFFFF;
+}
+
+
+.flex-column,
+.profile-card-body{
+    width: 45vh;
+    margin-left: 10vh;
+}

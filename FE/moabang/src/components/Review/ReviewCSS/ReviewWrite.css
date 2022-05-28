@@ -1,0 +1,122 @@
+.toggle-container{
+    width: 100%;
+    height: auto;
+    background-color: #e6dbed;
+    border-radius: 18px;
+}
+
+#ReviewIsCleared{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+}
+#ReviewJoinNum{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#ReviewJoinDiff{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+}
+#ReviewIsCleared{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#ReviewStar{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#ReviewClearTime{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#ReviewActive{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#ReviewHint{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+#ReviewRecommendNum{
+    font-family: "Jalnsn";
+    font-size: 16px;
+    font-weight: 600;
+
+}
+#ReviewCotent{
+    margin-top: 15px;
+}
+
+
+.writeSumitBtn{
+    margin: 10px;
+    width: 100px;
+    height: 28px;
+    border-radius: 10px;
+}
+#inputTitle{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+    
+}
+
+#inputContent{
+    width: 60%;
+    height: 70px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    
+}
+
+#inputContent:focus {
+    background-color: lightblue;
+}
+
+
+#input1 {
+    width: 400px;
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+#input2 {
+    width: 50px;
+    background-color: #FFFFFF;
+    outline: none;
+    text-align: center;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 5px;
+}
+
+
+#reviewImg{
+    height: 60px;
+    width: 60px;
+}
+

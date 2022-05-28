@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/moabang_lightGray"
+    tools:context=".src.theme.ThemeDetailActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_themeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:elevation="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iv_toolbar_leadingIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="34dp"
+                    android:background="@drawable/icon_back"
+                    android:backgroundTint="@color/moabang_pink"
+                    android:drawableTint="@color/moabang_pink"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/iv_toolbar_trailingIcon"
+                    app:layout_constraintStart_toEndOf="@+id/iv_toolbar_leadingIcon"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tv_toolbar_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_gravity="left"
+                        android:autoSizeMaxTextSize="24dp"
+                        android:autoSizeMinTextSize="8dp"
+                        android:autoSizeTextType="uniform"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:textColor="@color/moabang_gray"
+                        android:textStyle="bold"
+                        tools:text="테마이름" />
+
+                    <TextView
+                        android:id="@+id/tv_toolbar_cafe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:gravity="center"
+                        android:textColor="@color/moabang_pink"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        tools:text="카페이름" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/iv_toolbar_trailingIcon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:background="@drawable/icon_like_before" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_themeDA_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="16dp"
+            android:background="@drawable/rounded_rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar_themeDetail">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_themeDA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/iv_themeDA_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tv_themeDA_genre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="장르"
+                android:textColor="@color/moabang_gray"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toTopOf="@+id/themeDA_diff"
+                app:layout_constraintEnd_toStartOf="@+id/tv_themeDA_time"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cv_themeDA" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="시간"
+                android:textColor="@color/moabang_gray"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_genre"
+                app:layout_constraintEnd_toStartOf="@+id/tv_themeDA_star"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_genre" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text="★"
+                android:textColor="@color/moabang_pink"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_time"
+                app:layout_constraintEnd_toStartOf="@+id/tv_themeDA_rating"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_time" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="별점"
+                android:textColor="@color/moabang_gray"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_star"
+                app:layout_constraintEnd_toStartOf="@+id/themeDA_blank"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_star" />
+
+            <View
+                android:id="@+id/themeDA_blank"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_rating"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_rating" />
+
+            <TextView
+                android:id="@+id/themeDA_diff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="16dp"
+                android:text="난이도"
+                android:textColor="@color/moabang_pink"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/tv_themeDA_desc"
+                app:layout_constraintEnd_toStartOf="@+id/tv_themeDA_diff"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_diff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="5"
+                android:textColor="@color/moabang_gray"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/themeDA_diff"
+                app:layout_constraintEnd_toStartOf="@+id/themeDA_player"
+                app:layout_constraintStart_toEndOf="@+id/themeDA_diff" />
+
+            <TextView
+                android:id="@+id/themeDA_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:text="인원"
+                android:textColor="@color/moabang_pink"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_diff"
+                app:layout_constraintEnd_toStartOf="@+id/tv_themeDA_player"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_diff" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_player"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="2~4"
+                android:textColor="@color/moabang_gray"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/themeDA_player"
+                app:layout_constraintEnd_toStartOf="@+id/themeDA_type"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/themeDA_player" />
+
+            <TextView
+                android:id="@+id/themeDA_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:text="타입"
+                android:textColor="@color/moabang_pink"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_player"
+                app:layout_constraintEnd_toStartOf="@+id/tv_themeDA_type"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_player" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="자물쇠"
+                android:textColor="@color/moabang_gray"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/themeDA_type"
+                app:layout_constraintEnd_toStartOf="@+id/themeDA_active"
+                app:layout_constraintStart_toEndOf="@+id/themeDA_type" />
+
+            <TextView
+                android:id="@+id/themeDA_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="3dp"
+                android:text="활동성"
+                android:textColor="@color/moabang_pink"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_type"
+                app:layout_constraintEnd_toStartOf="@+id/tv_themeDA_active"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_type" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_active"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="6dp"
+                android:text="보통"
+                android:textColor="@color/moabang_gray"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="@+id/themeDA_active"
+                app:layout_constraintEnd_toStartOf="@+id/themeDA_blank2"
+                app:layout_constraintStart_toEndOf="@+id/themeDA_active" />
+
+            <View
+                android:id="@+id/themeDA_blank2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_themeDA_active"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/tv_themeDA_active"
+                app:layout_constraintTop_toTopOf="@+id/tv_themeDA_active" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="140dp"
+                android:scrollbars="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="설명설명\n설명설명2"
+                android:textAlignment="center"
+                android:textColor="@color/moabang_gray"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_themeDA_diff" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/rounded_rectangle"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:weightSum="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cl_themeDA_info">
+
+            <TextView
+                android:id="@+id/tv_themeDA_homepage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="홈페이지"
+                android:textAlignment="center"
+                android:textColor="@drawable/tv_click"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="22dp"
+                android:background="@color/moabang_pink" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_review"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="리뷰"
+                android:textAlignment="center"
+                android:textColor="@drawable/tv_click"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="22dp"
+                android:background="@color/moabang_pink" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_compare"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:text="비교하기"
+                android:textAlignment="center"
+                android:textColor="@drawable/tv_click"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="22dp"
+                android:background="@color/moabang_pink" />
+
+            <TextView
+                android:id="@+id/tv_themeDA_cafe"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="카페"
+                android:textAlignment="center"
+                android:textColor="@drawable/tv_click"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/themeDA_bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rounded_rectangle"
+        android:backgroundTint="@color/white"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="200dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/bs_themeDA"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/frameLayout_themeDetail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/icon_up" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout_themeDetail"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bs_themeDA">
+        </FrameLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

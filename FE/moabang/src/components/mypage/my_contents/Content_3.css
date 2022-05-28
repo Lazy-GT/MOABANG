@@ -1,0 +1,22 @@
+.review-content,
+.community-content,
+.review-subtitle,
+.community-title,
+.review-title
+{
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+    /* border: 0.1vh solid #000000; */
+    
+}
+
+.community-title,
+.review-title{
+    padding-right: 4vh;
+}
+
+.community-badge,
+.review-badge{
+    float: left;
+}

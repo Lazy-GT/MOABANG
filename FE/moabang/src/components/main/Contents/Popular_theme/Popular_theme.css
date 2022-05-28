@@ -1,0 +1,29 @@
+.pop .slick-slide {
+    /* border: 0vh solid #ffffff; */
+    box-sizing: border-box;
+    font-family: 'BMJUA';
+    margin-bottom: 5vh;
+  }
+  
+  .pop-theme{
+      display: flex;
+      
+  }
+.pop-theme p{
+    text-align: left;
+    margin: 2vh 0 0vh 0vh;
+    font-size: 35px;
+    font-family: 'ONE-Mobile-POP';
+    
+}
+.pop-theme .fire{
+    width: 8vh;
+    padding: 2vh;
+}
+.pop{
+    padding: 1vh 5vh 1vh 5vh;
+    border: 0.1vh solid #8785A2;
+    background-color: #FFFFFF;
+    box-shadow: 0 6px 19px 0 rgba(0,0,0,0.2), 0 8px 16px 0 rgba(0,0,0,0.19);
+    border-radius: 2vh;
+}

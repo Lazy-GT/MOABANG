@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="activity"
+            type="com.ssafy.moabang.src.login.LoginActivity" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F4E5E5"
+        tools:context=".src.login.LoginActivity">
+
+        <ImageView
+            android:id="@+id/imageView_loginA"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintBottom_toTopOf="@id/kakao_login_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/main_logo"
+            android:contentDescription="모아방 앱 로고"/>
+
+
+        <TextView
+            android:id="@+id/tv_loginA_tmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:text="로그인 구현 전 >"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageButton
+            android:id="@+id/kakao_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#00F6F6F6"
+            android:contentDescription="카카오 로그인 버튼"
+            android:onClick="@{activity.kakaoLogin}"
+            app:layout_constraintBottom_toTopOf="@+id/tv_loginA_tmp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/kakao_login_medium_narrow" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

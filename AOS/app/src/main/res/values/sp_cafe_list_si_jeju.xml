@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--  제주도 사람은 재주도 좋아 ㅋㅋㅋ  -->
+    <string-array name="cafe_list_si_jeju">
+        <item>전체</item>
+        <item>제주</item>
+    </string-array>
+</resources>

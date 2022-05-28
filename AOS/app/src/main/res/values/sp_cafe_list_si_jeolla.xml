@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--  오늘의 토막 상식! 전라도는 영어로 jeolla다, jeonla가 아님 그럼 20000  -->
+    <string-array name="cafe_list_si_jeolla">
+        <item>전체</item>
+        <item>광주</item>
+        <item>군산</item>
+        <item>목포</item>
+        <item>순천</item>
+        <item>여수</item>
+        <item>익산</item>
+        <item>전주</item>
+    </string-array>
+</resources>

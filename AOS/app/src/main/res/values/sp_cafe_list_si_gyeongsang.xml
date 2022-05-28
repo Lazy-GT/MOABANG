@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cafe_list_si_gyeongsang">
+        <item>전체</item>
+        <item>경주</item>
+        <item>구미</item>
+        <item>대구</item>
+        <item>부산</item>
+        <item>안동</item>
+        <item>양산</item>
+        <item>영주</item>
+        <item>울산</item>
+        <item>진주</item>
+        <item>창원</item>
+        <item>포항</item>
+    </string-array>
+</resources>

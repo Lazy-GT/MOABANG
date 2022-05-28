@@ -1,0 +1,63 @@
+.pop-theme-card-img{
+  height: 60vh;
+  padding: 3vh;
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.pop-theme-card{
+  position: relative;
+
+  width: 100%;
+}
+
+.pop-theme-card:hover .pop-theme-card-img {
+  opacity: 0.3;
+}
+
+
+
+.pop-theme-card:hover .pop-theme-card-body {
+  opacity: 1;
+}
+
+.pop-theme-card-body{
+    transition: .5s ease;
+    width: 70%;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: #FFC7C7;
+    color: #000000;
+    border-radius: 2vh;
+    padding:16px 32px;
+}
+
+
+.pop-theme-card-title{
+    font-family: "Son";
+    font-size: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+.pop-theme-card-subtitle{
+    margin-top: 1vh;
+    font-family: "SDSamliphopangche_Outline";
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    white-space: nowrap; 
+}
+.pop-theme-card-textbox{
+  
+}
+
+.badge{
+  /* display: flex; */
+}

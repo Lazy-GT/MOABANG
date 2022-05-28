@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ChipTextStyle">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="ChipTextStyle2">
+        <item name="android:textSize">14dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/moabang_pink</item>
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="MySpinnerDatePickerStyle" parent="Theme.AppCompat.Light.Dialog">
+        <!-- 상단 색 변경 -->
+        <item name="colorAccent">@color/moabang_pink</item>
+        <!-- dialog의 배경 변경 -->
+        <item name="background">@color/white</item>
+        <!-- 선택한 날짜를 표시할 색상 -->
+        <item name="colorControlActivated">@color/moabang_pink</item>
+        <item name="colorControlHighlight">@color/moabang_pink</item>
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="tab_text" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16dp</item>
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+    <style name="EditTextStyle" parent="Widget.Design.TextInputLayout">
+        <item name="colorControlNormal">@color/moabang_gray</item>  // unFocus 상태일때 밑줄 색.
+        <item name="boxStrokeColor">@color/moabang_pink</item> // Focus 상태일때 밑줄 색.
+        <item name="android:textCursorDrawable">@color/moabang_pink</item>  // cursor 색.
+        <item name="android:fontFamily">@font/font</item>
+    </style>
+
+</resources>

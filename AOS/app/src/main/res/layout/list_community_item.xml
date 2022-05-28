@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="@drawable/rounded_rectangle">
+
+    <TextView
+        android:id="@+id/tv_commuF_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
+        android:foregroundGravity="center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="공지"
+        android:textAlignment="textStart"
+        android:textColor="@color/moabang_pink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_commuF_title"
+        app:layout_constraintEnd_toStartOf="@+id/tv_commuF_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_commuF_title" />
+
+    <TextView
+        android:id="@+id/tv_commuF_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="start|center_vertical"
+        android:text="v1.0.0 안내"
+        android:textColor="@color/moabang_gray"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/commuf_border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_commuF_header"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/commuf_border"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/border_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_commuF_title" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_commuF"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/icon_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commuf_border" />
+
+    <TextView
+        android:id="@+id/tv_commuF_author"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="운영자"
+        android:textColor="@color/moabang_gray"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/civ_commuF"
+        app:layout_constraintStart_toEndOf="@+id/civ_commuF"
+        app:layout_constraintTop_toTopOf="@+id/civ_commuF" />
+
+    <TextView
+        android:id="@+id/tv_commuF_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="x월 x일"
+        android:textColor="@color/moabang_gray"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/commuF_comment"
+        app:layout_constraintEnd_toStartOf="@+id/commuF_comment" />
+
+    <TextView
+        android:id="@+id/commuF_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="댓글"
+        android:textColor="@color/moabang_gray"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_commuF_comment"
+        app:layout_constraintEnd_toStartOf="@+id/tv_commuF_comment" />
+
+    <TextView
+        android:id="@+id/tv_commuF_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="0"
+        android:textColor="@color/moabang_pink"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/commuF_comment2"
+        app:layout_constraintEnd_toStartOf="@+id/commuF_comment2" />
+
+    <TextView
+        android:id="@+id/commuF_comment2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="개"
+        android:textColor="@color/moabang_gray"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/commuf_border" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
