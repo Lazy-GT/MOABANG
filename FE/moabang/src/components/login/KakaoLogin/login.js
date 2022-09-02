@@ -18,7 +18,7 @@ const LoginWithKakao = () => {
 
       var ACCESS_TOKEN = window.Kakao.Auth.getAccessToken();
 
-
+      console.log(ACCESS_TOKEN);
       axios.post('/user/klogin', {
 
       }, {
